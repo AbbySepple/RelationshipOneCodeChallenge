@@ -1,4 +1,15 @@
-.bannerdiv .banner {
-  height: 0.5%;
-  width: auto;
+.jumbotron {
+  background-image: url("img/laundrybanner.jpg");
+  background-size: cover;
+  padding: 15%;
+  margin-top: 1em;
+}
+
+.col-lg-6 {
+  padding-left:1em;
+}
+
+#display {
+  margin-top: 3em;
+  text-align: center;
 }

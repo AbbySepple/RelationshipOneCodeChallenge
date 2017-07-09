@@ -1,10 +1,7 @@
-$(document).ready(function() {
-    console.log("client.js is ready.");
+console.log('inside form in informtion function');
 
-$('#submit').click(function(){
-  console.log("inside submit");
-        var toAdd = $('input[id=firstName]').val();
-        $('.list').append("<div class='item'>" + toAdd + "</div>");
-    });
-
-});
+function showInput() {
+  console.log('inside show input function');
+        document.getElementById('display').innerHTML =
+                    document.getElementById("firstName").value;
+    }

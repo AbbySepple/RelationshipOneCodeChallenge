@@ -4,12 +4,15 @@
 <head>
   <!-- meta/viewpoint -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- vendors/src -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
   <script src="country_states_organized.js" charset="utf-8"></script>
   <script src="formInformation.js" charset="utf-8"></script>
   <!-- style -->
+  <link rel="stylesheet" href="style.css">
+
   <title>Relasionship One Laundry</title>
 </head>
 
@@ -17,90 +20,85 @@
   <img src="img/R1_Logo_Horizontal.png" alt="">
 </header>
 
+<div class="jumbotron">
+</div>
+
 <body>
-  <!-- top banner -->
-  <!-- <div class="bannerdiv">
-  <img src="img/laundrybanner.jpg" alt="" class="banner">
-</div> -->
-<!-- content div -->
-<div class="col-sm-12 col-md-6 col-lg-6">
-  <p>
-    Ea aliquid nonumes sit. Pro utinam indoctum cu, ei erant audire temporibus sea. Saepe ignota cotidieque no vel, nec accumsan legendos ei. In quando necessitatibus vel, errem similique mea eu, dolorum invidunt pericula ei mei. Nibh abhorreant reprimique
-    mea at. Has dolor repudiare dissentiunt no
-  </p>
-  <br />
-  <p>
-    Odio scripta te est. Eius vitae oporteat ad sea. Cum ad meis probatus, pro putent forensibus mediocritatem cu, qui inermis graecis in. Laboramus tincidunt mei ne. Altera mandamus ei vis. Tota fastidii eos et.
-  </p>
-  <br />
-  <p>
-    Sea nostrud ocurreret te, appareat apeirian vituperatoribus in sed. Pri numquam meliore legendos in. Nec at aliquid fabellas omittantur. In nobis iudico persecuti vis, ex mel noluisse partiendo. Zril affert quodsi est ex, habeo scribentur his ne.
+  <!-- content div -->
+  <div class="col-sm-12 col-lg-6 sideBySide">
+    <p>
+      Ea aliquid nonumes sit. Pro utinam indoctum cu, ei erant audire temporibus sea. Saepe ignota cotidieque no vel, nec accumsan legendos ei. In quando necessitatibus vel, errem similique mea eu, dolorum invidunt pericula ei mei. Nibh abhorreant reprimique
+      mea at. Has dolor repudiare dissentiunt no
+    </p>
+    <br />
+    <p>
+      Odio scripta te est. Eius vitae oporteat ad sea. Cum ad meis probatus, pro putent forensibus mediocritatem cu, qui inermis graecis in. Laboramus tincidunt mei ne. Altera mandamus ei vis. Tota fastidii eos et.
+    </p>
+    <br />
+    <p>
+      Sea nostrud ocurreret te, appareat apeirian vituperatoribus in sed. Pri numquam meliore legendos in. Nec at aliquid fabellas omittantur. In nobis iudico persecuti vis, ex mel noluisse partiendo. Zril affert quodsi est ex, habeo scribentur his ne.
   </div>
 
 
   <!-- form -->
   <!-- first name -->
-  <form class="sol-sm-12 col-md-6 col-lg-6 ">
+  <form id="mainForm" class="sol-sm-12 col-lg-6 sideBySide" role="information form">
     <div class="form-group">
       <label for="firstName">First name</label>
       <input type="text" class="form-control" id="firstName" placeholder="First name">
     </div>
     <!-- last name -->
-      <div class="form-group">
+    <div class="form-group">
       <label for="lastName">Last name</label>
-      <input type="text" class="form-control" id="lastName" placeholder="Last name">
+      <input type="text" class="form-control input" id="lastName" placeholder="Last name">
     </div>
     <!-- email -->
-      <div class="form-group">
-        <label for="emailInput">Email address</label>
-        <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
-      </div>
-      <!-- company -->
-        <div class="form-group">
-          <label for="company">Company</label>
-          <input type="text" class="form-control" id="company" placeholder="Company">
-        </div>
-        <!-- job title -->
-          <div class="form-group">
-            <label for="titleInput">Title</label>
-            <input type="text" class="form-control" id="titalInput" placeholder="Title">
-          </div>
-          <!-- country select dropdown -->
-          <div class="form-group">
-            <label for="exampleSelect1">Country</label>
-            <select class="form-control" id="country" name="country">
+    <div class="form-group">
+      <label for="emailInput">Email address</label>
+      <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+    </div>
+    <!-- company -->
+    <div class="form-group">
+      <label for="company">Company</label>
+      <input type="text" class="form-control" id="company" placeholder="Company">
+    </div>
+    <!-- job title -->
+    <div class="form-group">
+      <label for="titleInput">Title</label>
+      <input type="text" class="form-control" id="titalInput" placeholder="Title">
+    </div>
+    <!-- country select dropdown -->
+    <div class="form-group">
+      <label for="exampleSelect1">Country</label>
+      <select class="form-control" id="country" name="country">
             </select>
-          </div>
-          <!-- state select dropdown -->
-          <div class="form-group">
-            <label for="exampleSelect1">State</label>
-            <select class="form-control" id="state" name="state">
+    </div>
+    <!-- state select dropdown -->
+    <div class="form-group">
+      <label for="exampleSelect1">State</label>
+      <select class="form-control" id="state" name="state">
             </select>
-          </div>
-          <!-- comment area -->
-          <div class="form-group">
-            <label for="exampleTextarea">Additiona comments</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-          </div>
-          <!-- submit -->
-          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-        </form>
+    </div>
+    <!-- comment area -->
+    <div class="form-group">
+      <label for="exampleTextarea">Additiona comments</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+    <!-- submit -->
+    <button type="submit" class="btn btn-primary" onclick="showInput" id="submit">Submit</button>
+  </form>
 
+  <!-- result content -->
+  <div id="display" class="col-sm-12">
+    <h3>Form Results</h3>
+  </div>
 
-        <!-- result content -->
-        <div class="formResults">
-          <p>I am the magical results</p>
-        </div>
-
-
-
-
-      </body>
-      <!-- for state and country drop down -->
-      <script language="javascript">
-      populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
-      </script>
+</body>
+<!-- for state and country drop down -->
+<script language="javascript">
+  populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+</script>
 
 
 
-      </html>
+</html>
